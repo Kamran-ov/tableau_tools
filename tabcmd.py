@@ -74,7 +74,7 @@ class Tabcmd(TableauBase):
                 additional_url_params += "?:refresh"
         view_url += additional_url_params
 
-        cmd = 'tabcmd export "{}" --filename "{}" --{} --pagelayout {} --pagesize {} --width {} --height {}'.format(
+        cmd = 'tabcmd export "{}" --filename "{}" --{} --pagelayout {} --pagesize {} --width {} --height {} --no-certcheck'.format(
             view_url, filename, export_type, self.export_page_layout, self.export_pagesize, self.export_width_pixels,
             self.export_height_pixels
         )
